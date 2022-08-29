@@ -16,12 +16,12 @@ object SwapMethods {
 
     fun mySwapStep1() {
 
-        var i = 1
+        var i = 0
 
         while (i < array.size) {
 
-            var firstNumb = array.indexOf(i)*2
-            var secondNumb = array.indexOf(i)*2+1
+            var firstNumb = array[i]*2
+            var secondNumb = array[i]*2+1
 
             val tmp = firstNumb
             firstNumb = secondNumb
@@ -38,5 +38,4 @@ fun main(){
     println("Here is array of 11 elements: " + array.joinToString ( separator = ", "))
     mySwapStep2()
     mySwapStep1()
-    //println(array.indexOf(1))
 }
