@@ -2,6 +2,7 @@ import SwapMethods.mySwapStep1
 import SwapMethods.mySwapStep2
 
 var array = mutableListOf<Int>(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11)
+var array2 = mutableListOf<Int>(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11)
 
 object SwapMethods {
     fun mySwapStep2() {
@@ -18,18 +19,15 @@ object SwapMethods {
 
         var i = 0
 
-        while (i < array.size) {
+        while (i < 5) {
 
-            var firstNumb = array[i]*2
-            var secondNumb = array[i]*2+1
-
-            val tmp = firstNumb
-            firstNumb = secondNumb
-            secondNumb = tmp
+            val tmp = array2[i*2]
+            array2[i*2] = array2[i*2+1]
+            array2[i*2+1] = tmp
 
             i++
         }
-        println(array)
+        println(array2)
     }
 }
 
